@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="LoginPage.master.cs" Inherits="LoginPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="logo"><a href="index.html">DIGITAL LIBRARY</span></a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="HomePage.aspx">Home</a></li>
+                    <li><a href="generic.html">About</a></li>
+				    <li><a href="#">Courses</a>
+                       <ul>
+                        <li><a href="generic.html">B Tech</a></li>
+                        <li><a href="elements.html">M Tech</a></li>
+                        <li><a href="elements.html">MCA</a></li>
+                      </ul>
+                     </li>
+                     <li><a href="generic.html">Contact</a></li>
+                     <li><a href="LoginPage.aspx">Login</a></li>
+                   </ul>
+			</nav>
+           
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    
+   
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="FacultyPage.master.cs" Inherits="FacultyPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <link rel="stylesheet" href="assets/css/main.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="FacultyHome.aspx">FACULTY HOME</a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="FacultyHome.aspx">Home</a></li>
+                     <li><a href="#">Upload</a>
+                       <ul>
+                        <li><a href="Faculty_UploadNotes.aspx">Notes</a></li>
+                        <li><a href="Faculty_UploadQuestion.aspx">Question Paper</a></li>
+                      </ul>
+                     </li>
+				    <li><a href="#">View</a>
+                       <ul>
+                        <li><a href="">Projects</a></li>
+                        <li><a href="">Assignments</a></li>
+                         <li><a href="Faculty_ViewNotes.aspx">Notes</a></li>
+                      </ul>
+                     </li>
+                     <li><a href="Faculty_AnnounceSeminar.aspx">Seminar Topics</a></li>
+                      <li><a href="#">Settings</a>
+                       <ul>
+                        <li><a href="">Update Profile</a></li>
+                        <li><a href="">Change Password</a></li>
+                      </ul>
+                     </li>
+                     <li><a href="HomePage.aspx">Logout</a></li>
+                   </ul>
+			</nav>
+           
+
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Section -->
+					<section class="wrapper">
+						<div class="inner">
+							<header class="align-center">
+								<h1>AWH COLLEGE OF ENGINEERING</h1>
+								<p>Affiliated to APJ Abdul Kalam Technological University and Approved by AICTE</p>
+							</header>
+							<div class="flex flex-2">
+								<div class="col col3">
+									<!-- Form -->
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+     </div>
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="copyright">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
+					</ul>
+					<p>&copy; Untitled. All rights reserved. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.</p>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+</body>
+</html>

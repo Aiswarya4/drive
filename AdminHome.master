@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminHome.master.cs" Inherits="AdminHome" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="AdminHome.aspx">DIGITAL LIBRARY</a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="AdminHome.aspx">Home</a></li>
+				    <li><a href="#">Course</a>
+                       <ul>
+                        <li><a href="Admin_CourseReg.aspx">Add Course</a></li>
+                        <li><a href="Admin_RemoveCourse.aspx">Remove Course</a></li>
+                      </ul>
+                     </li>
+                      <li><a href="#">Faculty</a>
+                       <ul>
+                        <li><a href="Admin_FacultyReg.aspx">Add Faculty</a></li>
+                        <li><a href="Admin_RemoveFaculty.aspx">Remove Faculty</a></li>
+                      </ul>
+                     </li>
+                     <li><a href="Admin_StudentReg.aspx">Student</a></li>
+                      <li><a href="#">Subject</a>
+                       <ul>
+                        <li><a href="Admin_AddSubject.aspx">Add Subject</a></li>
+                        <li><a href="Admin_RemoveSubject.aspx">Remove Subject</a></li>
+                      </ul>                     
+                     </li>
+                      <li><a href="qpupload.aspx">Question Paper</a></li>
+                     <li><a href="HomePage.aspx">Logout</a></li>
+                   </ul>
+			</nav>
+           
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Section -->
+					<section class="wrapper">
+						<div class="inner">
+							<header class="align-center">
+								<h1>AWH COLLEGE OF ENGINEERING</h1>
+								<p>Affiliated to APJ Abdul Kalam Technological University and Approved by AICTE</p>
+							</header>
+							<div class="flex flex-2">
+								<div class="col col3">
+									<!-- Form -->
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    </div>
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="copyright">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
+					</ul>
+					<p>&copy; Untitled. All rights reserved. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.</p>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+</body>
+</html>
